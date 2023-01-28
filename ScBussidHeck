@@ -1,0 +1,71 @@
+gg.alert('OTAK ATIK APK~YOUTUBE~CHANNEL~LIKE',"MENU~ON")
+
+--MENU ADD IN SECRIPT
+HOME = 1
+function HOME()
+multi = gg.multiChoice({
+"[] CAMERA YUTUBER ",
+"[] SPEED BALAP KMH ",
+"EXIT",
+
+},nil,'BUSSID~V3.7.1')
+
+if multi == nil then else
+if multi[1] == true then ch1() end
+if multi[2] == true then ch2() end
+if multi[3] == true then os.exit()
+end
+end
+HOMEDM = -1
+end
+
+function ch1()
+gg.alert('JARE~KONO~OTAK ATIK APK',"menu.1_proses")
+gg.searchNumber("0.69999998808;5.19999980927:9", ggTYPE_FLOAT)
+--[[ found: 0 ]]
+gg.refineNumber("0.69999998808", gg.TYPE_FLOAT)
+--[[ found: 12 ]]
+gg.getResults(10)
+--[[count: 10 ]]
+gg.editAll("0",gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("2.25;5.19999980927:9", ggTYPE_FLOAT)
+--[[ found: 0 ]]
+gg.refineNumber("2.25", gg.TYPE_FLOAT)
+--[[ found: 12 ]]
+gg.getResults(10)
+--[[count: 10 ]]
+gg.editAll("2.23",gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("2.23;5.19999980927:9", ggTYPE_FLOAT)
+--[[ found: 0 ]]
+gg.refineNumber("5.19999980927", gg.TYPE_FLOAT)
+--[[ found: 12 ]]
+gg.getResults(10)
+--[[count: 10 ]]
+gg.editAll("4",gg.TYPE_FLOAT)
+gg.toast("menu.1")
+gg.clearResults()
+gg.setVisible(false)
+end
+
+function ch2()
+   gg.searchNumber("1.0;0.06666666269:5", gg.TYPE_FLOAT)
+gg.refineNumber("1", gg.TYPE_FLOAT)
+revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("2", gg.TYPE_FLOAT)
+gg.sleep(50)
+gg.clearList()
+   gg.clearResults()
+  gg.toast(" SPEED  BALAP KMH[ACTIVE]")
+  end 
+
+while true do
+  if gg.isVisible(false) then
+    HOMEDM = 1
+    gg.setVisible(false)
+    end
+    print(os.date("%c"))
+  print("SC BY OTAK ATIK APK")
+    if HOMEDM == 1 then HOME() end
+end

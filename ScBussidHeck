@@ -6,6 +6,17 @@ function HOME()
 multi = gg.multiChoice({
 "[] CAMERA YUTUBER ",
 "[] SPEED BALAP KMH ",
+"[] WALLHACK ON ",
+"[] WALLHACK OFF ",
+"[] NO BANGUNAN ON",
+"[] NO BANGUNAN OFF",
+"[] NO POHON ON",
+"[] NO POHON OFF",
+"[] HUTAN LEBAT V1 ON",
+"[] HUTAN LEBAT V1 OFF",
+"[] HUTAN LEBAT V2 ON",
+"[] HUTAN LEBAT V2 OFF",
+"[] SREACH DHOLLPIN V3.7.1",
 "EXIT",
 
 },nil,'BUSSID~V3.7.1')
@@ -13,7 +24,18 @@ multi = gg.multiChoice({
 if multi == nil then else
 if multi[1] == true then ch1() end
 if multi[2] == true then ch2() end
-if multi[3] == true then os.exit()
+if multi[3] == true then ch3() end
+if multi[4] == true then ch4() end
+if multi[5] == true then ch5() end
+if multi[6] == true then ch6() end
+if multi[7] == true then ch7() end
+if multi[8] == true then ch8() end
+if multi[9] == true then ch9() end
+if multi[10] == true then ch10() end
+if multi[11] == true then ch11() end
+if multi[12] == true then ch12() end
+if multi[13] == true then ch13() end
+if multi[14] == true then os.exit()
 end
 end
 HOMEDM = -1
@@ -21,6 +43,7 @@ end
 
 function ch1()
 gg.alert('JARE~KONO~OTAK ATIK APK',"menu.1_proses")
+gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("0.69999998808;5.19999980927:9", ggTYPE_FLOAT)
 --[[ found: 0 ]]
 gg.refineNumber("0.69999998808", gg.TYPE_FLOAT)
@@ -44,21 +67,150 @@ gg.refineNumber("5.19999980927", gg.TYPE_FLOAT)
 gg.getResults(10)
 --[[count: 10 ]]
 gg.editAll("4",gg.TYPE_FLOAT)
-gg.toast("menu.1")
+gg.toast("ON")
 gg.clearResults()
 gg.setVisible(false)
 end
 
 function ch2()
+gg.setRanges(gg.REGION_ANONYMOUS)
    gg.searchNumber("1.0;0.06666666269:5", gg.TYPE_FLOAT)
 gg.refineNumber("1", gg.TYPE_FLOAT)
-revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
+revert = gg.getResults(999, nil, nil, nil, nil, nil, nil, nil, nil)
 gg.editAll("2", gg.TYPE_FLOAT)
+gg.clearList()
+   gg.clearResults()
+  gg.toast("ON[ACTIVE]")
+  end 
+  
+function ch3()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("1956496814;1000593162:5", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("1956496814", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(999, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("75757575", gg.TYPE_DWORD)
+gg.clearList()
+gg.clearResults()
+gg.toast("WALLHACK ON[ACTIVE]")
+end 
+
+function ch4()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("75757575;1000593162:5", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("75757575", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(999, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("1956496814", gg.TYPE_DWORD)
+gg.sleep(50)
+gg.clearList()
+gg.clearResults()
+gg.toast("WALLHACK OFF[ACTIVE]")
+end 
+
+function ch5()
+gg.setRanges(gg.REGION_ANONYMOUS)
+   gg.searchNumber("10000", gg.TYPE_DWORD)
+gg.refineNumber("10000", gg.TYPE_DWORD)
+revert = gg.getResults(999, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("75757575", gg.TYPE_DWORD)
 gg.sleep(50)
 gg.clearList()
    gg.clearResults()
-  gg.toast(" SPEED  BALAP KMH[ACTIVE]")
+  gg.toast(" GUNDUL ON[ACTIVE]")
   end 
+  
+  function ch6()
+gg.setRanges(gg.REGION_ANONYMOUS)
+   gg.searchNumber("75757575", gg.TYPE_DWORD)
+gg.refineNumber("75757575", gg.TYPE_DWORD)
+revert = gg.getResults(999, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("10000", gg.TYPE_DWORD)
+gg.sleep(50)
+gg.clearList()
+   gg.clearResults()
+  gg.toast(" GUNDUL ON[ACTIVE]")
+  end 
+  
+  function ch7()
+  gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("0.3", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.processResume()
+revert = gg.getResults(999, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("75757575", gg.TYPE_FLOAT)
+gg.sleep(50)
+gg.clearList()
+   gg.clearResults()
+  gg.toast(" NO POHON ON[ACTIVE]")
+  end 
+gg.processResume()
+
+function ch8()
+  gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("75757575", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.processResume()
+revert = gg.getResults(999, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("0.3", gg.TYPE_FLOAT)
+gg.sleep(50)
+gg.clearList()
+   gg.clearResults()
+  gg.toast(" NO POHON ON[ACTIVE]")
+  end 
+gg.processResume()
+
+function ch9()
+  gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("1112014848;1065353216:53", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("1065353216", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(999, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("1091567616", gg.TYPE_DWORD)
+gg.sleep(50)
+gg.clearList()
+   gg.clearResults()
+  gg.toast(" HUTAN LEBAT V1 ON[ACTIVE]")
+  end 
+  
+  function ch10()
+  gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("1112014848;1091567616:53", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("1091567616", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(999, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("1065353216", gg.TYPE_DWORD)
+gg.sleep(50)
+gg.clearList()
+   gg.clearResults()
+  gg.toast(" HUTAN LEBAT V1 OFF[ACTIVE]")
+  end 
+  
+    function ch11()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("-1917838712;1065353216:57", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("1065353216", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(80, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("1091567616", gg.TYPE_DWORD)
+gg.sleep(50)
+gg.clearList()
+   gg.clearResults()
+  gg.toast(" HUTAN LEBAT V2 OFF[ACTIVE]")
+  end 
+  
+      function ch12()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("-1917838712;1091567616:57", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("1091567616", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(80, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("1065353216", gg.TYPE_DWORD)
+gg.sleep(50)
+gg.clearList()
+   gg.clearResults()
+  gg.toast(" HUTAN LEBAT V2 OFF[ACTIVE]")
+  end 
+  
+  function ch13()
+gg.alert('❎1Ꮯ=0,1~88=0,85~94=0,85~A0=0,85~8C = -0,25', "☑️SETING~DHOLLPIN☑️")
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("-1073741824A;1F::2534", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.getResults(999)
+end
+
 
 while true do
   if gg.isVisible(false) then
@@ -66,6 +218,6 @@ while true do
     gg.setVisible(false)
     end
     print(os.date("%c"))
-  print("SC BY OTAK ATIK APK")
+  print("CREATOR SC BY OTAK ATIK APK")
     if HOMEDM == 1 then HOME() end
 end

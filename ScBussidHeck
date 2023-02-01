@@ -1,4 +1,4 @@
-gg.alert('OTAK ATIK APK~YOUTUBE~CHANNEL~LIKE',"MENU~ON")
+gg.alert('OTAK ATIK APK~YOUTUBE~CHANNEL~LIKE',"MENU~ON")
 
 --MENU ADD IN SECRIPT
 HOME = 1
@@ -14,8 +14,8 @@ multi = gg.multiChoice({
 "[] NO POHON OFF",
 "[] HUTAN LEBAT V1 ON",
 "[] HUTAN LEBAT V1 OFF",
-"[] HUTAN LEBAT V2 ON",
-"[] HUTAN LEBAT V2 OFF",
+"[] WALLHACK V2 ON",
+"[] WALLHACK V2 OFF",
 "[] SREACH DHOLLPIN V3.7.1",
 "EXIT",
 
@@ -158,7 +158,7 @@ gg.processResume()
 
 function ch9()
   gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("1112014848;1065353216:53", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.searchNumber("15630340;1065353216:81", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("1065353216", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(999, nil, nil, nil, nil, nil, nil, nil, nil)
 gg.editAll("1091567616", gg.TYPE_DWORD)
@@ -170,7 +170,7 @@ gg.clearList()
   
   function ch10()
   gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("1112014848;1091567616:53", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.searchNumber("15630340;1091567616:81", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.refineNumber("1091567616", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(999, nil, nil, nil, nil, nil, nil, nil, nil)
 gg.editAll("1065353216", gg.TYPE_DWORD)
@@ -181,27 +181,25 @@ gg.clearList()
   end 
   
     function ch11()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("-1917838712;1065353216:57", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-gg.refineNumber("1065353216", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-revert = gg.getResults(80, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("1091567616", gg.TYPE_DWORD)
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("0.8", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(10000, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("-999", gg.TYPE_FLOAT)
 gg.sleep(50)
 gg.clearList()
    gg.clearResults()
-  gg.toast(" HUTAN LEBAT V2 OFF[ACTIVE]")
+  gg.toast(" WAALLHACK  V2 ON[ACTIVE]")
   end 
   
       function ch12()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("-1917838712;1091567616:57", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-gg.refineNumber("1091567616", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-revert = gg.getResults(80, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("1065353216", gg.TYPE_DWORD)
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("-999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(10000, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("0.8", gg.TYPE_FLOAT)
 gg.sleep(50)
 gg.clearList()
    gg.clearResults()
-  gg.toast(" HUTAN LEBAT V2 OFF[ACTIVE]")
+  gg.toast(" WALLHACK V2 OFF[ACTIVE]")
   end 
   
   function ch13()
@@ -209,6 +207,7 @@ gg.alert('❎1Ꮯ=0,1~88=0,85~94=0,85~A0=0,85~8C = -0,25', "☑️SETING~DHOLLPI
 gg.setRanges(gg.REGION_CODE_APP)
 gg.searchNumber("-1073741824A;1F::2534", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 gg.getResults(999)
+gg.toast(" SREACH DHOLLPIN V3.7.1 ON[ACTIVE]")
 end
 
 
